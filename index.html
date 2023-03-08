@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocaloid Page</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://kit.fontawesome.com/d1c5aef1a3.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="loader-box">
+    <div class="loader"></div>
+</div>
+
+<body id="app">
+
+    <header class="header">
+
+        <div class="header-title">
+
+            <a class="header-logo" href="">
+                <img class="img-logo" src="assets/images/Hatsune Miku + Text.svg" alt="header-logo">
+                VOCALOID PAGE
+            </a>
+
+            <div class="languages">
+                <a id="en" href="#/" class="lang selected-lang">EN</a>
+                |
+                <a id="pt-br" href="#/" class="lang">PT-BR</a>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="#project">{{translation.translate("header_title_project")}}</a>
+            <a href="#vocaloids">VOCALOIDS</a>
+            <a href="#games">{{translation.translate("header_title_games")}}</a>
+        </nav>
+
+    </header>
+
+    <main class="main-content">
+
+        <div class="background">
+            <section class="introduction-section">
+                <h1>{{translation.translate("home_title")}}</h1>
+                <p>{{translation.translate("home_description")}}</p>
+            </section>
+        </div>
+
+
+        <section id="project" class="the-project-section">
+
+            <div class="the-project-content">
+
+                <h2>O PROJETO VOCALOID PAGE</h2>
+
+                <h3>A proposta inicial é reunir fãs e apreciadores de toda a comunidade em um só lugar sejam pelas músicas, jogos ritmicos, personagens e outros.</h3>
+
+                <div class="the-project-features">
+
+                    <div class="the-project-features-item">
+                        <i class="fa-solid fa-music" style="font-size: 34px;"></i>
+                        <h3>Compartilhe sua música</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat architecto aperiam debitis animi, illum delectus non officiis.</p>
+                    </div>
+                    <div class="the-project-features-item">
+                        <i class="fa-solid fa-gamepad" style="font-size: 34px;"></i>
+                        <h3>Descubra parceiros de jogo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat architecto aperiam debitis animi, illum delectus non officiis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <img class="the-project-image" src="assets/images/hatsune-miku-what-it-is-2.png" alt="hatsune miku">
+        </section>
+
+        <section id="vocaloids" class="what-is-section">
+
+            <img class="what-is-image" src="assets/images/hatsune-miku-the-project.png" alt="hatsune miku">
+
+            <div class="what-is-content">
+
+                <h2>{{translation.translate("whatis_section_title")}}</h2>
+
+                <p>{{translation.translate("whatis_section_text")}}</p>
+            </div>
+
+        </section>
+
+        <section class="vocaloids-section">
+
+            <h2>VOCALOIDS</h2>
+
+            <div class="vocaloids-content">
+
+                <div class="gallery-img">
+                    <img src="assets/images/miku-gallery.png" alt="">
+                    <h3>Hatsune Miku</h3>
+                    <p>{{translation.translate("vocaloid_section_text_miku")}}</p>
+                    <button>{{translation.translate("button_read_more")}}</button>
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/images/rin-gallery.png" alt="">
+                    <h3>Kagamine Rin</h3>
+                    <p>{{translation.translate("vocaloid_section_text_rin")}}</p>
+                    <button>{{translation.translate("button_read_more")}}</button>
+                </div>
+                <div class="gallery-img">
+                    <img  src="assets/images/len-gallery.png" alt="">
+                    <h3>Kagamine Len</h3>
+                    <p>{{translation.translate("vocaloid_section_text_len")}}</p>
+                    <button>{{translation.translate("button_read_more")}}</button>
+                </div>
+                <div class="gallery-img">
+                    <img  src="assets/images/lukav4x-gallery.png" alt="">
+                    <h3>Megurine Luka</h3>
+                    <p>{{translation.translate("vocaloid_section_text_luka")}}</p>
+                    <button>{{translation.translate("button_read_more")}}</button>
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/images/kaitov3-gallery.png" alt="">
+                    <h3>KAITO</h3>
+                    <p>{{translation.translate("vocaloid_section_text_kaito")}}</p>
+                    <button>{{translation.translate("button_read_more")}}</button>
+                </div>
+                <div class="gallery-img">
+                    <img  src="assets/images/meikov3-gallery.png" alt="">
+                    <h3>MEIKO</h3>
+                    <p>{{translation.translate("vocaloid_section_text_meiko")}}</p>
+                    <button>{{translation.translate("button_read_more")}}</button>
+                </div>
+                <div class="gallery-img">
+                    <img  src="assets/images/gumi-gallery.png" alt="">
+                    <h3>Megpoid Gumi</h3>
+                    <p>{{translation.translate("vocaloid_section_text_gumi")}}</p>
+                    <button>{{translation.translate("button_read_more")}}</button>
+                </div>
+                <div class="gallery-img">
+                    <img  src="assets/images/gakupo-gallery.png" alt="">
+                    <h3>Kamui Gakupo</h3>
+                    <p>{{translation.translate("vocaloid_section_text_gakupo")}}</p>
+                    <button>{{translation.translate("button_read_more")}}</button>
+                </div>
+                <div class="gallery-img">
+                    <img  src="assets/images/ia-gallery.png" alt="">
+                    <h3>IA</h3>
+                    <p>{{translation.translate("vocaloid_section_text_ia")}}</p>
+                    <button>{{translation.translate("button_read_more")}}</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+       
+        <div class="sec-foo-first">
+
+            <h2>{{translation.translate("footer_title")}}</h2>
+            <a href="#/">{{translation.translate("footer_sign_up_title")}}</a>
+        </div>
+        
+        <div class="sec-foo-second">
+            
+            <div>
+                <a class="logo" href="">
+                    <img class="img-logo" src="assets/images/Hatsune Miku + Text.svg" alt="header-logo">
+                </a>
+                <p>{{translation.translate("footer_text")}}</p>
+            </div>
+
+            <div>
+                <nav class="legal-agreements">
+                    <h3>{{translation.translate("footer_legal_agreements_title")}}</h3>
+                    <a href="#/">{{translation.translate("footer_privacy_policy_title")}}</a>
+                    <a href="#/">{{translation.translate("footer_term_conditions_title")}}</a>
+                    <a href="#/">{{translation.translate("footer_cookies_policy_title")}}</a>
+                </nav>
+            </div>
+
+
+            <div class="social-media">
+                <h3>{{translation.translate("footer_lets_chat_title")}}</h3>
+                <a href="#/">example@example.com.br</a>
+                <div class="social-media-links">
+                    <a href="#/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="classes/Translation.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
