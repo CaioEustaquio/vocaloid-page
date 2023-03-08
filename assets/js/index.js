@@ -5,8 +5,9 @@ window.onload = () =>{
     
     header.style.display = 'flex';
     loader.style.display = 'none';
+
     
-    const { createApp } = Vue
+    const { createApp } = Vue;
 
     createApp({
         data() {
@@ -14,6 +15,7 @@ window.onload = () =>{
                 translation: Translation
             }
         },
+
         mounted(){
 
             Translation.setLang(localStorage.getItem("application-lang"));
@@ -30,6 +32,6 @@ window.onload = () =>{
                     });
                 });
             });
-        },
+        }
     }).mount('#app');
 };
