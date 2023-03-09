@@ -5,7 +5,7 @@ class Translation{
         let lang = !localStorage.getItem("application-lang") ? "en" : localStorage.getItem('application-lang');
 
         var request = new XMLHttpRequest();
-        request.open("GET", `../assets/translate/${lang}.json`, false);
+        request.open("GET", `assets/translate/${lang}.json`, false);
         request.send(null);
         var data = JSON.parse(request.responseText);
         
