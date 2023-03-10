@@ -9,11 +9,11 @@
     <script src="https://kit.fontawesome.com/d1c5aef1a3.js" crossorigin="anonymous"></script>
 </head>
 
-<div class="loader-box">
-    <div class="loader"></div>
-</div>
-
 <body id="app">
+
+    <div class="loader-box">
+        <div class="loader"></div>
+    </div>
 
     <header class="header">
 
@@ -164,7 +164,7 @@
         
         <div class="sec-foo-second">
             
-            <div>
+            <div class="sec-foo-logo-desktop">
                 <a class="logo" href="">
                     <img class="img-logo" src="assets/images/Hatsune Miku + Text.svg" alt="header-logo">
                 </a>
@@ -191,6 +191,12 @@
                     <a href="#/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
+        </div>
+        <div class="sec-foo-logo-mobile">
+            <a class="logo" href="">
+                <img class="img-logo" src="assets/images/Hatsune Miku + Text.svg" alt="header-logo">
+            </a>
+            <p>{{translation.translate("footer_text")}}</p>
         </div>
     </footer>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
