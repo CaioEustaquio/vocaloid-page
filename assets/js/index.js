@@ -1,23 +1,22 @@
 window.onload = () =>{
 
-    let header = document.querySelector('header.header');
-    let loader = document.querySelector('.loader-box');
-    
-    header.style.display = 'flex';
-    loader.style.display = 'none';
-
-    
     const { createApp } = Vue;
 
     createApp({
-        data() {
+        data(){
             return{
-                translation: Translation
+                translate: Translation.getTranslate()
             }
         },
 
         mounted(){
 
+            let header = document.querySelector('header.header');
+            let loader = document.querySelector('.loader-box');
+
+            header.style.display = 'flex';
+            loader.style.display = 'none';
+            
             Translation.setLang(localStorage.getItem("application-lang"));
 
             let langsBtn = [...document.querySelectorAll("a.lang")];
@@ -31,7 +30,7 @@ window.onload = () =>{
                         window.location.reload();
                     });
                 });
-            });
+            });           
         }
     }).mount('#app');
 };
