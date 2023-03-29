@@ -1,15 +1,16 @@
 class Translation{
 
-    static translate(key){
+    static getTranslate(){
 
         let lang = !localStorage.getItem("application-lang") ? "en" : localStorage.getItem('application-lang');
-
-        var request = new XMLHttpRequest();
+        
+        let request = new XMLHttpRequest();
         request.open("GET", `assets/translate/${lang}.json`, false);
         request.send(null);
-        var data = JSON.parse(request.responseText);
         
-        return data[key];
+        let data = JSON.parse(request.responseText);
+
+        return data;
     };
 
     static setLang(langId){

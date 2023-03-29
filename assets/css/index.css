@@ -243,6 +243,7 @@ body{
     -webkit-box-orient: vertical;  
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+    color: #000;
 }
 
 .gallery-img button{
@@ -272,6 +273,71 @@ body{
 .gallery-img:not(:hover){
     box-shadow: none;
     transition: 0.5s;
+}
+
+.games-section{
+    margin-top: 30px;
+    margin-bottom: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.games-section h2{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(225,40,133);
+}
+
+.games-section .games-description{
+    width: 80vw;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.games-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.games-gallery:first-child{
+    margin-left: 0;
+}
+
+.games-gallery .game{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    gap: 0 20px;
+}
+
+.games-gallery .game img{
+    height: 200px;
+    width: 160px;
+    box-shadow: 5px 10px 10px #888888;
+}
+
+.game .game-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.game-info .game-title{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+.game-info .game-platform{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 40, 133);
 }
 
 .footer{
@@ -458,6 +524,16 @@ body{
 
     .what-is-section p{
         max-width: 80vw;
+    }
+
+    .game:first-child{
+        margin-top: 0;
+        justify-content: space-between;
+    }
+
+    .game{
+        margin-left: 0px;
+        margin-top: 10px;
     }
 
     .sec-foo-second{
